@@ -5,7 +5,7 @@ permalink: /research/
 # description: A growing collection of your cool projects.
 years: [2024]
 nav: true
-nav_order: 2
+nav_order: 3
 display_categories: [Physical Properties, CGM]
 horizontal: false
 social: false
