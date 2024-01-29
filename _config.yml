@@ -268,8 +268,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: []
-  first_name: []
+  last_name: [Polzin]
+  first_name: [Ava]
 
   style: apa
   locale: en
