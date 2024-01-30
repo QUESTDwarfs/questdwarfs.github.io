@@ -11,7 +11,7 @@ social: false
 Below is a list of primary publications using QUEST Dwarfs.
 
 <!-- _pages/publications.md -->
-<!-- <div class="publications">
+<div class="publications">
 
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
@@ -19,4 +19,3 @@ Below is a list of primary publications using QUEST Dwarfs.
 {% endfor %}
 
 </div>
- -->
