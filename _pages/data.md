@@ -9,7 +9,7 @@ The QUEST Dwarfs project extends existing samples of dwarf galaxies for which th
 
 To cite QUEST Dwarfs data use:
 
-```bibtex
+```tex
 @ARTICLE{test,
        author = {{Test}, Test and {Author}, Author},
         title = "{Test Publication}",
@@ -20,3 +20,5 @@ To cite QUEST Dwarfs data use:
 ```
 
 and please reference [HST AR-17049](https://ui.adsabs.harvard.edu/abs/2022hst..prop17049P/abstract){:target="_blank"}.
+
+All code associated with this sample is available on [GitHub](https://github.com/QUESTDwarfs){:target="_blank"}.
