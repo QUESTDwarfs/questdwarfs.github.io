@@ -8,7 +8,7 @@ nav_order: 5
 social: false
 ---
 
-Below is a list of primary publications using QUEST Dwarfs.
+Below is a list of primary publications from the QUEST Dwarfs team.
 
 <!-- _pages/publications.md -->
 <div class="publications">

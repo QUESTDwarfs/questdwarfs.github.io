@@ -1,37 +1,38 @@
 ---
-layout: profile
-title: Team
+layout: profiles
 permalink: /team/
+title: Team
+# description: members of the lab or group
 nav: true
 nav_order: 2
-horizontal: false
-social: false
+
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+    image: Hsiao-Wen.png
+    content: about_hsiao-wen.md
+    image_circular: True # crops the image to make it circular
+    # more_info: >
+    #   <p>Prof. Hsiao-Wen Chen</p>
+    #   <p>Professor</p>
+    #   <p>University of Chicago</p>
   - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-  image: prof_pic.jpg
-  content: about_einstein.md
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    image: Ava.jpg
+    content: about_ava.md
+    image_circular: True # crops the image to make it circular
+    # more_info: >
+    #   <p>Ava Polzin</p>
+    #   <p>PhD Candidate</p>
+    #   <p>University of Chicago</p>
+  - align: right
+    image: Zhijie.jpeg
+    content: about_zhijie.md
+    image_circular: True # crops the image to make it circular
+    # more_info: >
+    #   <p>Dr. Zhijie Qu</p>
+    #   <p>KICP Associate Fellow</p>
+    #   <p>University of Chicago</p>
+
 ---
