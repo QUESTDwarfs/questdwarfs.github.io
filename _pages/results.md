@@ -6,12 +6,12 @@ permalink: /research/
 years: [2024]
 nav: true
 nav_order: 3
-display_categories: [Physical Properties, CGM]
+display_categories: [Physical Properties, CGM, Star Formation]
 horizontal: false
 social: false
 ---
 
-Major results from the QUEST Dwarfs sample.
+Because of the breadth of galaxies in this sample and the multiwavelength coverage of both spectra and imaging, we are able to study the connection between the chemical and physical properties of these myriad galaxies. We highlight here some of the major results from the QUEST Dwarfs sample.
 
 
 <!-- pages/projects.md -->
