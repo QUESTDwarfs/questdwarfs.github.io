@@ -16,7 +16,8 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 <!-- load jQuery and tablesorter scripts -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script> -->
+<script type="text/javascript" src="/assets/js/jquery/jquery.tablesorter.min.js"></script>
 
 <!-- tablesorter widgets (optional) -->
 <script type="text/javascript" src="/assets/js/jquery/jquery.tablesorter.widgets.js"></script>
