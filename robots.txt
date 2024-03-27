@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://avapolzin.github.io/sitemap.xml
+Sitemap: https://questdwarfs.github.io/sitemap.xml
