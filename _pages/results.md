@@ -11,7 +11,7 @@ horizontal: false
 social: false
 ---
 
-Because of the breadth of galaxies in this sample and the multiwavelength coverage of both spectra and imaging, we are able to study the connection between the chemical and physical properties of these myriad galaxies. We highlight here some of the major results from the QUEST Dwarfs sample.
+Because of the breadth of galaxies in this sample and the multiwavelength coverage of both spectra and imaging, we are able to study the connection between the chemical and physical properties of these myriad galaxies in exceptional detail. We highlight here some of the major results from the QUEST Dwarfs project.
 
 
 <!-- pages/projects.md -->
