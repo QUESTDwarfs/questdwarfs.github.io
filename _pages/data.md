@@ -57,16 +57,24 @@ All code associated with this sample is available on [GitHub](https://github.com
   </tbody>
 </table>
 
-<script type="text/javascript" >
+<!-- <script type="text/javascript" >
         $(function() {
 	    $("#myTable").tablesorter();
 		});
 </script>
+ -->
 
+ <script>
+ 	$(document).ready(function() 
+        { 
+            $("#myTable").tablesorter(); 
+        } 
+    );
+  </script>
 
 &nbsp;
 
-{% details Sample Galaxy 1 %}
+{% details **Sample Galaxy 1** %}
 Details of Sample Galaxy 1
 {% enddetails %}
 
