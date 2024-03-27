@@ -13,11 +13,12 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 **QUEST Dwarfs DR1 is coming soon!**
 
-
+<!-- choose a theme file -->
+<link rel="stylesheet" href="/assets/js/jquery/theme.default.css">
 <!-- load jQuery and tablesorter scripts -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script> -->
-<script type="text/javascript" src="/assets/js/jquery/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+<!-- <script type="text/javascript" src="/assets/js/jquery/jquery.tablesorter.min.js"></script> -->
 
 <!-- tablesorter widgets (optional) -->
 <script type="text/javascript" src="/assets/js/jquery/jquery.tablesorter.widgets.js"></script>
@@ -42,7 +43,7 @@ All code associated with this sample is available on [GitHub](https://github.com
   </thead>
   <tbody>
     <tr>
-      <td>Sample Galaxy 2</td>
+      <td>Sample Galaxy 1</td>
       <td>00:00:00</td>
       <td>+00:00:01</td>
       <td>9</td>
@@ -51,7 +52,7 @@ All code associated with this sample is available on [GitHub](https://github.com
       <td>5</td>
     </tr>
     <tr>
-      <td>Sample Galaxy 1</td>
+      <td>Sample Galaxy 2</td>
       <td>10:00:00</td>
       <td>-20:00:01</td>
       <td>7.5</td>
