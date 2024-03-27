@@ -20,8 +20,6 @@ All code associated with this sample is available on [GitHub](https://github.com
 </div>
 
 
-&nbsp;
-
 {% details **Sample Galaxy 1** %}
 Details of Sample Galaxy 1
 {% enddetails %}
