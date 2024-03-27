@@ -14,7 +14,7 @@ All code associated with this sample is available on [GitHub](https://github.com
 **QUEST Dwarfs DR1 is coming soon!**
 
 <!-- choose a theme file -->
-<link rel="stylesheet" href="assets/js/jquery/theme.default.css">
+<link rel="stylesheet" href="https://mottie.github.io/tablesorter/css/theme.default.css">
 <!-- load jQuery and tablesorter scripts -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
@@ -35,7 +35,7 @@ All code associated with this sample is available on [GitHub](https://github.com
       <th>Name</th>
       <th>RA</th>
       <th>Dec</th>
-      <th>log M<sub>&#9733;</sub>/M<sub>&#9737;</sub></th>
+      <th>log M<sub>star</sub>/M<sub>&#9737;</sub></th>
       <th>Environment</th>
       <th>log sSFR/yr<sup>-1</sup></th>
       <th>N<sub>QSO</sub></th>
@@ -63,5 +63,7 @@ All code associated with this sample is available on [GitHub](https://github.com
   </tbody>
 </table>
 
-
+{% details Sample Galaxy 1 %}
+Details of Sample Galaxy 1
+{% enddetails %}
 
