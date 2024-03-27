@@ -21,13 +21,19 @@ All code associated with this sample is available on [GitHub](https://github.com
 <!-- tablesorter widgets (optional) -->
 <script type="text/javascript" src="/assets/js/jquery/jquery.tablesorter.widgets.js"></script>
 
+<script type="text/javascript" >
+        $(function() {
+	    $("#myTable").tablesorter();
+		});
+</script>
+
 <table id="myTable" class="tablesorter">
   <thead>
     <tr>
       <th>Name</th>
       <th>RA</th>
       <th>Dec</th>
-      <th>log M<sub>star</sub>/M<sub>&#9737</sub></th>
+      <th>log M<sub>star</sub>/M<sub>&#9737;</sub></th>
       <th>Environment</th>
       <th>log sSFR/yr<sup>-1</sup></th>
       <th>N<sub>QSO</sub></th>
@@ -54,10 +60,6 @@ All code associated with this sample is available on [GitHub](https://github.com
     </tr>
   </tbody>
 </table>
-
-$(function() {
-  $("#myTable").tablesorter();
-});
 
 
 
