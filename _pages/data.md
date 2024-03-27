@@ -24,42 +24,40 @@ All code associated with this sample is available on [GitHub](https://github.com
 <table id="myTable" class="tablesorter">
   <thead>
     <tr>
-      <th>Last Name</th>
-      <th>First Name</th>
-      <th>Email</th>
-      <th>Due</th>
-      <th>Web Site</th>
+      <th>Name</th>
+      <th>RA</th>
+      <th>Dec</th>
+      <th>log M<sub>star</sub>/M<sub>&#9737</sub></th>
+      <th>Environment</th>
+      <th>log sSFR/yr<sup>-1</sup></th>
+      <th>N<sub>QSO</sub></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Smith</td>
-      <td>John</td>
-      <td>jsmith@gmail.com</td>
-      <td>$50.00</td>
-      <td>http://www.jsmith.com</td>
+      <td>Sample Galaxy 1</td>
+      <td>00:00:00/td>
+      <td>+00:00:01</td>
+      <td>9</td>
+      <td>Isolated</td>
+      <td>-11</td>
+      <td>5</td>
     </tr>
     <tr>
-      <td>Bach</td>
-      <td>Frank</td>
-      <td>fbach@yahoo.com</td>
-      <td>$50.00</td>
-      <td>http://www.frank.com</td>
-    </tr>
-    <tr>
-      <td>Doe</td>
-      <td>Jason</td>
-      <td>jdoe@hotmail.com</td>
-      <td>$100.00</td>
-      <td>http://www.jdoe.com</td>
-    </tr>
-    <tr>
-      <td>Conway</td>
-      <td>Tim</td>
-      <td>tconway@earthlink.net</td>
-      <td>$50.00</td>
-      <td>http://www.timconway.com</td>
+      <td>Sample Galaxy 1</td>
+      <td>10:00:00/td>
+      <td>-20:00:01</td>
+      <td>7.5</td>
+      <td>Group</td>
+      <td>-10</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
+
+$(function() {
+  $("#myTable").tablesorter();
+});
+
+
 
