@@ -41,8 +41,8 @@ All code associated with this sample is available on [GitHub](https://github.com
   </thead>
   <tbody>
     <tr>
-      <td>Sample Galaxy 1</td>
-      <td>00:00:00/td>
+      <td>Sample Galaxy 2</td>
+      <td>00:00:00</td>
       <td>+00:00:01</td>
       <td>9</td>
       <td>Isolated</td>
@@ -51,7 +51,7 @@ All code associated with this sample is available on [GitHub](https://github.com
     </tr>
     <tr>
       <td>Sample Galaxy 1</td>
-      <td>10:00:00/td>
+      <td>10:00:00</td>
       <td>-20:00:01</td>
       <td>7.5</td>
       <td>Group</td>
