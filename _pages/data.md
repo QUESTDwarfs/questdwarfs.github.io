@@ -23,12 +23,6 @@ All code associated with this sample is available on [GitHub](https://github.com
 <!-- tablesorter widgets (optional) -->
 <script type="text/javascript" src="assets/js/jquery/jquery.tablesorter.widgets.js"></script>
 
-<script type="text/javascript" >
-        $(function() {
-	    $("#myTable").tablesorter();
-		});
-</script>
-
 <table id="myTable" class="tablesorter">
   <thead>
     <tr>
@@ -62,6 +56,15 @@ All code associated with this sample is available on [GitHub](https://github.com
     </tr>
   </tbody>
 </table>
+
+<script type="text/javascript" >
+        $(function() {
+	    $("#myTable").tablesorter();
+		});
+</script>
+
+
+&nbsp;
 
 {% details Sample Galaxy 1 %}
 Details of Sample Galaxy 1
