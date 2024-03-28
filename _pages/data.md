@@ -25,7 +25,10 @@ All code associated with this sample is available on [GitHub](https://github.com
 {% details **Sample Galaxy 1** %}
 Details of Sample Galaxy 1
 
-<button name="button" onclick="http://www.google.com">Click me - HTML</button> [Click me - MD](http://www.google.com){: .btn}
+> :Buttons
+> > :Button label=Click me, url=https://google.com
+
+ [Click me - MD](http://www.google.com){: .btn}
 {% enddetails %}
 
 {% details **Sample Galaxy 2** %}
