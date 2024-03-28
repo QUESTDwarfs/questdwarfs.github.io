@@ -13,6 +13,8 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 **QUEST Dwarfs DR1 is coming soon!**
 
+&nbsp;
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' width='100%'></iframe>
@@ -22,6 +24,8 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 {% details **Sample Galaxy 1** %}
 Details of Sample Galaxy 1
+
+<button name="button" onclick="http://www.google.com">Click me - HTML</button> [Click me - MD](http://www.google.com){: .btn}
 {% enddetails %}
 
 {% details **Sample Galaxy 2** %}
