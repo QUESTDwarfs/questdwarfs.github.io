@@ -25,10 +25,8 @@ All code associated with this sample is available on [GitHub](https://github.com
 {% details **Sample Galaxy 1** %}
 Details of Sample Galaxy 1
 
-> :Buttons
-> > :Button label=Click me, url=https://google.com
 
- [Click me - MD](http://www.google.com){: .btn}
+[View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
 {% enddetails %}
 
 {% details **Sample Galaxy 2** %}
