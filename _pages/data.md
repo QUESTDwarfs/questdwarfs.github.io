@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: about_logo
 title: Data
 permalink: /
 subtitle: Quasars to Understand Environments around, and STar formation in, Dwarfs
