@@ -26,7 +26,7 @@
             {%- endif -%} -->
             <!-- <img src="{{ "./questdwarfs_flat_transparent.001" | relative_url }}"> -->
             <!-- <img src = "assets/logos/questdwarfs_flat_transparent.001.png"> -->
-            <img src="{{ '/assets/logos/questdwarfs_flat_transparent.001.png' | relative_url }}" width="40%">
+            <img src="{{ '/assets/logos/questdwarfs_flat_transparent.001.png' | relative_url }}" width="50%">
           </a>
           {%- elsif site.enable_navbar_social -%}
           <!-- Social Icons -->
@@ -93,7 +93,7 @@
               </li>
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                <a class="nav-link" href="{{ p.url | relative_url }}" style="white-space:normal">{{ p.title }}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
