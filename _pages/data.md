@@ -21,6 +21,7 @@ All code associated with this sample is available on [GitHub](https://github.com
     </div>
 </div>
 
+&nbsp;
 
 <script>
 function openTarget() {
