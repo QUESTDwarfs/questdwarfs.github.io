@@ -22,13 +22,15 @@ All code associated with this sample is available on [GitHub](https://github.com
 </div>
 
 
-{% details **Sample Galaxy 1** %}
-<a id='galaxy1'></a>
-Details of Sample Galaxy 1
+<div id='galaxy1'>
+  {% details **Sample Galaxy 1** %}
+  <!-- <a id='galaxy1'> -->
+  Details of Sample Galaxy 1
 
 
-[View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
-{% enddetails %}
+  [View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
+  {% enddetails %}
+</div>
 
 {% details **Sample Galaxy 2** %}
 Details of Sample Galaxy 2
