@@ -21,9 +21,9 @@ All code associated with this sample is available on [GitHub](https://github.com
     </div>
 </div>
 
-<a id='galaxy1'>
+
 {% details **Sample Galaxy 1** %}
-</a>
+<a id='galaxy1'></a>
 Details of Sample Galaxy 1
 
 
