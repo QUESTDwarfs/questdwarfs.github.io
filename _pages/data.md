@@ -17,18 +17,18 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="330px" width="800pt"></iframe>
+        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="100%" width="800pt"></iframe>
     </div>
 </div>
 
-&nbsp;
-
+<a id='galaxy1'>
 {% details **Sample Galaxy 1** %}
 Details of Sample Galaxy 1
 
 
 [View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
 {% enddetails %}
+</a>
 
 {% details **Sample Galaxy 2** %}
 Details of Sample Galaxy 2
