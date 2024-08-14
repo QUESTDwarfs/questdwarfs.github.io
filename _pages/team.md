@@ -1,7 +1,7 @@
 ---
 layout: profiles
 permalink: /team/
-title: Team
+title: Core Team
 # description: members of the lab or group
 nav: true
 nav_order: 2
@@ -37,4 +37,8 @@ profiles:
 
 ---
 
-Test other content 
+***
+
+Test other content
+<!-- The following people have also worked with QUEST Dwarfs data and/or have contributed to their analysis:
+- **Catherine Mah** (Hong Kong University '25, exchange student at UChicago) -- Recovering integrated photometry and structural parameters from DECaLS imaging -->
