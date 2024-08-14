@@ -1,5 +1,5 @@
 # questdwarfs.github.io
-Quasars to Understand Environments and STar formation in Dwarfs
+Quasars to Understand Environments around, and STar formation in, Dwarfs
 
 Website + data repository for QUEST Dwarfs
 
