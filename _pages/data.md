@@ -31,6 +31,29 @@ Details of Sample Galaxy 1
 {% enddetails %}
 
 {% details **Sample Galaxy 2** %}
-Details of Sample Galaxy 1
+Details of Sample Galaxy 2
+
+[View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
+{% enddetails %}
+
+
+{% details **Sample Galaxy 3** %}
+Details of Sample Galaxy 3
+
+[View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [View in MAST](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
+{% enddetails %}
+
+
+{% details **Sample Galaxy 4** %}
+Details of Sample Galaxy 4
+
+[View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [View in MAST](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
+{% enddetails %}
+
+
+{% details **Sample Galaxy 5** %}
+Details of Sample Galaxy 5
+
+[View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [View in MAST](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
 {% enddetails %}
 
