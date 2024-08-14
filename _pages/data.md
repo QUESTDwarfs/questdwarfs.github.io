@@ -23,24 +23,24 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 &nbsp;
 
-<script>
-         var val = localStorage.getItem("open");
-         if (val == "true") {
-             var b = document.getElementById("mydetails");
-             b.open = true;
-             b.style.color = "red";
-             localStorage.removeItem("open");
-          }
-  // https://stackoverflow.com/questions/42458746/how-to-open-details-from-link-in-another-page
+<script type="text/javascript">
+  function openTarget() {
+    var hash = location.hash.substring(1);
+    if(hash) var details = document.getElementById(hash);
+    if(details && details.tagName.toLowerCase() === 'details') details.open = true;
+  }
+  window.addEventListener('hashchange', openTarget);
+  openTarget();
+  // https://stackoverflow.com/questions/37033406/automatically-open-details-element-on-id-call
 </script>
 
-{% details **Sample Galaxy 1** %}
-<a id='galaxy1'>
-Details of Sample Galaxy 1
+<details id='galaxy1' open>
+  <summary><b>Sample Galaxy 1</b></summary>
+  Details of Sample Galaxy 1
 
 
-[View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
-{% enddetails %}
+  [View in SIMBAD](http://www.google.com){: .btn} [View in DECaLS](http://www.google.com){: .btn} [Download ZIP](http://www.google.com){: .btn}
+</details>
 
 {% details **Sample Galaxy 2** %}
 Details of Sample Galaxy 2
