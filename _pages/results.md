@@ -3,10 +3,9 @@ layout: page
 title: Results
 permalink: /research/
 # description: A growing collection of your cool projects.
-years: [2024]
 nav: true
 nav_order: 3
-display_categories: [Physical Properties, CGM, Star Formation]
+display_categories: [Baryon Cycle, Circumgalactic Medium, Feedback] #[Physical Properties, CGM, Star Formation]
 horizontal: false
 social: false
 ---

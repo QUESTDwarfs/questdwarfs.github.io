@@ -39,5 +39,5 @@ profiles:
 
 ***
 
-The following people have also worked with QUEST Dwarfs data and/or have contributed to their analysis:
-- **Catherine Mah** (Hong Kong University '25, exchange student at UChicago) -- Recovering integrated photometry and structural parameters from DECaLS imaging
+<!-- The following people have also worked with QUEST Dwarfs data and/or have contributed to their analysis:
+- **Catherine Mah** (Hong Kong University '25, exchange student at UChicago) -- Recovered integrated photometry and structural parameters for most of the QUEST Dwarfs from DECaLS imaging  --><!-- 26 of 40 or 24 of 38 depending on what we cut --> 
