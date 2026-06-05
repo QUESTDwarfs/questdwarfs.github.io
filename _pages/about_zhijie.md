@@ -1,1 +1,1 @@
-**Zhijie Qu** is an Associate Fellow of the Kavli Institute for Cosmological Physics at the University of Chicago.
+**Zhijie Qu** is an Assistant Professor at Tsinghua University. Before that, he was an Associate Fellow of the Kavli Institute for Cosmological Physics at the University of Chicago.
