@@ -27,41 +27,43 @@ All code associated with this sample is available on [GitHub](https://github.com
 Summary tables are available here:
 
 
-[Download Galaxies CSV](http://www.google.com){: .btn} [Download Absorbers CSV](http://www.google.com){: .btn}
+<!-- [Download Galaxies CSV](http://www.google.com){: .btn} [Download Sightlines CSV](http://www.google.com){: .btn} -->
 
+
+<button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True" download="QUESTgalaxies_v1.csv">Download Galaxies CSV</a></button> <button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True" download="QUESTsightlines_v1.csv">Download Sightlines CSV</a></button>
 
 {% details **PGC 4143** %}
 Details of PGC 4143
 
 
-[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=PGC+4143&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=17.4223&dec=-2.2664&layer=ls-dr9&zoom=12){: .btn} [Download ZIP](http://www.google.com){: .btn}
+[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=PGC+4143&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=17.4223&dec=-2.2664&layer=ls-dr9&zoom=12){: .btn} [Download ZIP](https://download-directory.github.io/?url=https://github.com/QUESTDwarfs/galaxy_dataproducts/tree/main/PGC4143){: .btn}
 {% enddetails %}
 
 
 {% details **UGC 7370** %}
 Details of UGC 7370
 
-[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=UGC+7370&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=184.9181&dec=2.0808&layer=ls-dr9&zoom=12){: .btn} [Download ZIP](http://www.google.com){: .btn}
+[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=UGC+7370&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=184.9181&dec=2.0808&layer=ls-dr9&zoom=12){: .btn} [Download ZIP](https://download-directory.github.io/?url=https://github.com/QUESTDwarfs/galaxy_dataproducts/tree/main/UGC7370){: .btn}
 {% enddetails %}
 
 
 {% details **UGC 75** %}
 Details of UGC 75
 
-[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=UGC+75&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=2.1921&dec=15.8160&layer=ls-dr9&zoom=12){: .btn} [MAST](https://mast.stsci.edu/search/ui/#/hst/results?resolve=true&target=UGC%2075&data_type=image&observations=S&active_instruments=stis,acs,wfc3,cos&legacy_instruments=foc,nicmos,wfpc,wfpc2&radius=3&radius_units=arcminutes&useStore=false&search_key=84199d7be0c388){: .btn} [Download ZIP](http://www.google.com){: .btn}
+[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=UGC+75&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=2.1921&dec=15.8160&layer=ls-dr9&zoom=12){: .btn} [MAST](https://mast.stsci.edu/search/ui/#/hst/results?resolve=true&target=UGC%2075&data_type=image&observations=S&active_instruments=stis,acs,wfc3,cos&legacy_instruments=foc,nicmos,wfpc,wfpc2&radius=3&radius_units=arcminutes&useStore=false&search_key=84199d7be0c388){: .btn} [Download ZIP](https://download-directory.github.io/?url=https://github.com/QUESTDwarfs/galaxy_dataproducts/tree/main/UGC75){: .btn}
 {% enddetails %}
 
 
 {% details **UGC 5427** %}
 Details of UGC 5427
 
-[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=UGC+5427&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=151.1698&dec=29.3654&layer=ls-dr9&zoom=12){: .btn} [MAST](https://mast.stsci.edu/search/ui/#/hst/results?resolve=true&target=UGC%205427&data_type=image&observations=S&active_instruments=stis,acs,wfc3,cos&legacy_instruments=foc,nicmos,wfpc,wfpc2&radius=3&radius_units=arcminutes&useStore=false&search_key=0ca856719fdb7){: .btn} [Download ZIP](http://www.google.com){: .btn}
+[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=UGC+5427&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=151.1698&dec=29.3654&layer=ls-dr9&zoom=12){: .btn} [MAST](https://mast.stsci.edu/search/ui/#/hst/results?resolve=true&target=UGC%205427&data_type=image&observations=S&active_instruments=stis,acs,wfc3,cos&legacy_instruments=foc,nicmos,wfpc,wfpc2&radius=3&radius_units=arcminutes&useStore=false&search_key=0ca856719fdb7){: .btn} [Download ZIP](https://download-directory.github.io/?url=https://github.com/QUESTDwarfs/galaxy_dataproducts/tree/main/UGC5427){: .btn}
 {% enddetails %}
 
 
 {% details **NGC 5486** %}
 Details of NGC 5486
 
-[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC+5486&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=211.8528&dec=55.1025&layer=ls-dr9&zoom=12){: .btn} [MAST](https://mast.stsci.edu/search/ui/#/hst/results?resolve=true&target=NGC%205486&data_type=image&observations=S&active_instruments=stis,acs,wfc3,cos&legacy_instruments=foc,nicmos,wfpc,wfpc2&radius=3&radius_units=arcminutes&useStore=false&search_key=9a1faf9b28c4f){: .btn} [Download ZIP](http://www.google.com){: .btn}
+[SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC+5486&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=211.8528&dec=55.1025&layer=ls-dr9&zoom=12){: .btn} [MAST](https://mast.stsci.edu/search/ui/#/hst/results?resolve=true&target=NGC%205486&data_type=image&observations=S&active_instruments=stis,acs,wfc3,cos&legacy_instruments=foc,nicmos,wfpc,wfpc2&radius=3&radius_units=arcminutes&useStore=false&search_key=9a1faf9b28c4f){: .btn} [Download ZIP](https://download-directory.github.io/?url=https://github.com/QUESTDwarfs/galaxy_dataproducts/tree/main/NGC5486){: .btn}
 {% enddetails %}
 
