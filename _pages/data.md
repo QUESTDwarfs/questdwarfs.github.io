@@ -18,7 +18,7 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="3600px" width="800pt"></iframe>
+        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="630px" width="800pt"></iframe>
     </div>
 </div>
 
