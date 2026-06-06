@@ -18,7 +18,7 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="630px" width="800pt"></iframe>
+        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="3600px" width="800pt"></iframe>
     </div>
 </div>
 
@@ -27,10 +27,10 @@ All code associated with this sample is available on [GitHub](https://github.com
 Summary tables are available here:
 
 
-<!-- [Download Galaxies CSV](http://www.google.com){: .btn} [Download Sightlines CSV](http://www.google.com){: .btn} -->
+[Download Galaxies CSV](https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True){: .btn} [Download Sightlines CSV](href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True){: .btn}
 
 
-<button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True" download="QUESTgalaxies_v1.csv">Download Galaxies CSV</a></button> <button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True" download="QUESTsightlines_v1.csv">Download Sightlines CSV</a></button>
+<!-- <button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True" download="QUESTgalaxies_v1.csv">Download Galaxies CSV</a></button> <button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True" download="QUESTsightlines_v1.csv">Download Sightlines CSV</a></button> -->
 
 {% details **PGC 4143** %}
 Details of PGC 4143
