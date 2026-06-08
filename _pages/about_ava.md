@@ -1,1 +1,1 @@
-**Ava Polzin** is a PhD candidate in Astronomy & Astrophyics at the University of Chicago.
+**Ava Polzin** recently defended her PhD in Astronomy & Astrophyics at the University of Chicago. In September, she will start as a Dunlap Fellow at the University of Toronto.

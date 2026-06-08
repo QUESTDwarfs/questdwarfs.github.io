@@ -29,6 +29,8 @@ Summary tables are available here:
 
 [Download Galaxies CSV](https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True){: .btn} [Download Sightlines CSV](href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True){: .btn}
 
+<a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True" download="QUESTgalaxies_v1.csv" class="btn">Download Galaxies CSV</a> <a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True" download="QUESTsightlines_v1.csv" class="btn">
+
 
 <!-- <button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True" download="QUESTgalaxies_v1.csv">Download Galaxies CSV</a></button> <button><a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True" download="QUESTsightlines_v1.csv">Download Sightlines CSV</a></button> -->
 
