@@ -18,7 +18,7 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="630px" width="800pt"></iframe>
+        <iframe src="/assets/html/galpropstable.html" frameborder='0' scrolling='no' height="530px" width="800pt"></iframe>
     </div>
 </div>
 
@@ -31,6 +31,12 @@ Summary tables are available here:
 
 <a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTgalaxies_v1.csv?raw=True" download="QUESTgalaxies_v1.csv" class="btn">Download Galaxies CSV</a> <a href="https://github.com/QUESTDwarfs/galaxy_summaries/blob/main/QUESTsightlines_v1.csv?raw=True" download="QUESTsightlines_v1.csv" class="btn">Download Sightlines CSV</a>
 
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe src="/assets/html/quest_absorbers.html" frameborder='0' scrolling='yes' height="440px" width="800pt"></iframe>
+    </div>
+</div>
 
 
 
