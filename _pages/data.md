@@ -38,7 +38,7 @@ Summary tables are available here:
     </div>
 </div>
 
-*Open full resolution interactive accessible [here](https://questdwarfs.github.io/assets/html/quest_absorbers.html).*
+*Open full resolution interactive [here](https://questdwarfs.github.io/assets/html/quest_absorbers.html).*
 
 
 
