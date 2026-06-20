@@ -20,7 +20,7 @@ Because of the breadth of galaxies in this sample and the multiwavelength covera
     </div>
 </div>
 
-*Open full resolution interactive [here](https://questdwarfs.github.io/assets/html/quest_absorbers.html).*
+*Open full resolution interactive [here](https://questdwarfs.github.io/assets/html/quest_absorbers.html) (recommended).*
 
 
 
