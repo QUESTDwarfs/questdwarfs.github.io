@@ -34,9 +34,11 @@ Summary tables are available here:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/quest_absorbers.html" frameborder='0' width="100%"></iframe>
+        <iframe src="/assets/html/quest_absorbers_lowres.html" frameborder='0' scrolling='yes' height="440px" width="800pt"></iframe>
     </div>
 </div>
+
+*Open full resolution interactive accessible [here](https://questdwarfs.github.io/assets/html/quest_absorbers.html).*
 
 
 
