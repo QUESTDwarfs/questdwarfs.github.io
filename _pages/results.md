@@ -10,7 +10,22 @@ horizontal: false
 social: false
 ---
 
-Because of the breadth of galaxies in this sample and the multiwavelength coverage of both spectra and imaging, we are able to study the connection between the chemical and physical properties of these myriad galaxies in exceptional detail. We highlight here some of the major results from the QUEST Dwarfs project.
+Because of the breadth of galaxies in this sample and the multiwavelength coverage of both spectra and imaging, we are able to study the connection between the chemical and physical properties of these myriad galaxies in exceptional detail. You can explore our datasets here or see how to access them on our [Data](https://questdwarfs.github.io) page.
+
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe src="/assets/html/quest_absorbers_lowres.html" frameborder='0' scrolling='no' height="445px" width="800pt"></iframe>
+    </div>
+</div>
+
+*Open full resolution interactive [here](https://questdwarfs.github.io/assets/html/quest_absorbers.html).*
+
+
+
+
+We highlight here some of the major results from the QUEST Dwarfs project.
 
 
 <!-- pages/projects.md -->
