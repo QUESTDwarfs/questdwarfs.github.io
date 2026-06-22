@@ -23,6 +23,12 @@ Because of the breadth of galaxies in this sample and the multiwavelength covera
 *Open full resolution interactive [here](https://questdwarfs.github.io/assets/html/quest_absorbers.html) (recommended).*
 
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe src="/assets/html/quest_galaxies.html" frameborder='0' scrolling='yes' height="630px" width="800pt"></iframe>
+    </div>
+</div>
+
 
 
 We highlight here some of the major results from the QUEST Dwarfs project.
