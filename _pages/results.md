@@ -28,6 +28,7 @@ Because of the breadth of galaxies in this sample and the multiwavelength covera
         <iframe src="/assets/html/quest_galaxies.html" frameborder='0' scrolling='yes' height="630px" width="800pt"></iframe>
     </div>
 </div>
+*Open interactive in [new window](https://questdwarfs.github.io/assets/html/quest_galaxies.html).*
 
 
 
