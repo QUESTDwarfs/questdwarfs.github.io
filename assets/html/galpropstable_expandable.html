@@ -1,0 +1,432 @@
+<html>
+<!-- choose a theme file -->
+<link rel="stylesheet" href="https://mottie.github.io/tablesorter/css/theme.default.css">
+<!-- load jQuery and tablesorter scripts -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script> -->
+<script type="text/javascript" src="https://pengoworks.com/workshop/jquery/tablesorter/jquery.tablesorter.mod.js"></script>
+<link rel="stylesheet" type="text/css" href="../../_sass/_base.scss">
+
+<!-- WITH INSPIRATION FROM: -->
+<!-- https://www.quackit.com/html/html_editors/scratchpad/?example=/html/templates/tables/expandable_rows_table -->
+ <!-- https://www.quackit.com/html/html_editors/scratchpad/?example=/html/templates/tables/modern_minimalist_table -->
+<!-- https://pengoworks.com/workshop/jquery/tablesorter/tablesorter.htm -->
+
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript" src="../js/jquery/jquery.tablesorter.widgets.js"></script>
+
+<style>
+
+/* overall */
+.tablesorter-default {
+	width: 100%;
+	font: 12px/18px Arial, Sans-serif;
+	color: #333;
+	background-color: #fff;
+	border-spacing: 0;
+	margin: 10px 0 15px;
+	text-align: left;
+}
+
+/* header */
+.tablesorter th,
+.tablesorter thead td {
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+	border-collapse: collapse;
+	border-bottom: #ccc 2px solid;
+	padding: 0;
+}
+.tablesorter tfoot th,
+.tablesorter tfoot td {
+	border: 0;
+}
+.tablesorter .header,
+.tablesorter .tablesorter-header {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+	background-position: center right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	white-space: normal;
+	padding: 4px 20px 4px 4px;
+}
+.tablesorter thead .headerSortUp,
+.tablesorter thead .tablesorter-headerSortUp,
+.tablesorter thead .tablesorter-headerAsc {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+	border-bottom: #000 2px solid;
+}
+.tablesorter thead .headerSortDown,
+.tablesorter thead .tablesorter-headerSortDown,
+.tablesorter thead .tablesorter-headerDesc {
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+	border-bottom: #000 2px solid;
+}
+.tablesorter thead .sorter-false {
+	background-image: none;
+	cursor: default;
+	padding: 4px;
+}
+
+/* tfoot */
+.tablesorter tfoot .tablesorter-headerSortUp,
+.tablesorter tfoot .tablesorter-headerSortDown,
+.tablesorter tfoot .tablesorter-headerAsc,
+.tablesorter tfoot .tablesorter-headerDesc {
+	border-top: #000 2px solid;
+}
+
+/* tbody */
+.tablesorter td {
+	background-color: #fff;
+	border-bottom: #ccc 1px solid;
+	padding: 4px;
+	vertical-align: top;
+}
+
+.expandable-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: left;
+    color: #333;
+}
+.expandable-table thead th {
+    padding: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #333;
+    /* Stronger bottom border for the header */
+    border-bottom: 2px solid #333; 
+}
+.expandable-table tbody td {
+    padding: 10px;
+    font-size: 0.8rem;
+    /* Subtle bottom border for each row */
+    border-bottom: 1px solid #e0e0e0; 
+}
+/* This is the row the user clicks on */
+.expandable-table .row-expandable {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.expandable-table .row-expandable:hover {
+    background-color: #f8f9fa;
+}
+
+/* This is the row that is hidden/shown */
+.expandable-table .row-details {
+    display: none; /* Hidden by default */
+}
+.expandable-table .row-details.visible {
+    display: table-row; /* Show it when it has the 'visible' class */
+}
+.expandable-table .row-details td {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* A thicker border to separate it */
+}
+
+/* Styling for the expand/collapse icon */
+.expandable-table .expand-icon {
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.expandable-table .row-expandable.open .expand-icon {
+    transform: rotate(45deg);
+}
+
+:root {
+  --global-bg-color: #ffffff;
+  --global-code-bg-color: rgba($purple-color, 0.05);
+  --global-text-color: #000000;
+  --global-text-color-light: #828282;
+  --global-theme-color: #00A1FF;
+  --global-hover-color: #00A1FF;
+  --global-hover-text-color: #ffffff;
+  --global-footer-bg-color: #1C1C1D;
+  --global-footer-link-color: #ffffff;
+  --global-distill-app-color: #828282;
+  --global-divider-color: rgba(0,0,0,.1);
+  --global-card-bg-color: #ffffff;
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
+
+  .fa-sun {
+    display : none;
+  }
+  .fa-moon {
+    padding-left: 10px;
+    padding-top: 12px;
+    display : block;
+  }
+
+  .repo-img-light {
+    display: block;
+  }
+  .repo-img-dark {
+    display: none;
+  }
+}
+
+a.btn {
+          color: var(--global-text-color);
+          border: 1px solid #000000;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          margin-left: 0;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+            text-decoration: none;
+          }
+        }
+
+
+
+</style>
+
+
+
+<table id="myTable" class="tablesorter expandable-table">
+  <caption style="caption-side:bottom; text-align:left">Note that "+" is omitted from declinations to preserve sorting.</caption>
+  <thead>
+    <tr>
+      <th scope="col" style="width: 5%;"></th>
+      <th>Name</th>
+      <th>RA</th>
+      <th>Dec</th>
+      <th>log M<sub><span style="font-size:75%">&#9733;</span></sub>/M<sub>&#9737;</sub></th>
+      <th>Environment</th>
+      <th>log sSFR/yr<sup>-1</sup></th>
+      <th>N<sub>QSO</sub></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>PGC 4143</td>
+      <td>01:09:41.46</td>
+      <td>-02:15:59.3</td>
+      <td>8.9</td>
+      <td>Isolated</td>
+      <td>-10.595</td>
+      <td>3</td>
+    </tr>
+    <tr class="expand-child row-details">
+            <td></td>
+            <td colspan="7">
+                <div>
+                    <!-- <a href="https://simbad.cds.unistra.fr/simbad/sim-id?Ident=PGC+4143&submit=submit+id"><button>SIMBAD</button></a> -->
+                     <a href="https://simbad.cds.unistra.fr/simbad/sim-id?Ident=PGC+4143&submit=submit+id" class="btn">SIMBAD</a>
+                    <!-- <iframe src="quest_galaxies.html" frameborder='0' scrolling='yes' height="630px" width="800pt" display="block"></iframe> -->
+
+                </div>
+            </td>
+        </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>UGCA 285</td>
+      <td>12:33:08.5</td>
+      <td>-00:31:55</td>
+      <td>7.5</td>
+      <td>Group</td>
+      <td>-10.07</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>UGC 7370</td>
+      <td>12:19:40.33</td>
+      <td>02:04:46.5</td>
+      <td>9.4</td>
+      <td>Group</td>
+      <td>-10.060</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>PGC 41458</td>
+      <td>12:31:33.35</td>
+      <td>12:03:49.6</td>
+      <td>7.6</td>
+      <td>Interacting</td>
+      <td>-12.464</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td><i>PGC 41458b</i></td>
+      <td><i>12:31:33.96</i></td>
+      <td><i>12:04:03.4</i></td>
+      <td><i>7.2</i></td>
+      <td><i>Interacting</i></td>
+      <td><i>-12.3</i></td>
+      <td><i>1</i></td>
+    </tr>
+     <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>LeG 26</td>
+      <td>10:51:21.1</td>
+      <td>12:50:56</td>
+      <td>7.7</td>
+      <td>Group</td>
+      <td>-11.15</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>UGC 75</td>
+      <td>00:08:46.23</td>
+      <td>15:49:01.0</td>
+      <td>8.3</td>
+      <td>Interacting</td>
+      <td>-10.195</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>UGC 9126</td>
+      <td>14:15:40.08</td>
+      <td>16:32:59.0</td>
+      <td>9.2</td>
+      <td>Isolated</td>
+      <td>-9.58</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>UGC 7485</td>
+      <td>12:42:22.19</td>
+      <td>21:09:36.0</td>
+      <td>8.9</td>
+      <td>Isolated</td>
+      <td>-9.460</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>LEDA 1722581</td>
+      <td>08:35:37.14</td>
+      <td>25:00:15.0</td>
+      <td>8.8</td>
+      <td>Interacting</td>
+      <td>-10.300</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td><i>LEDA 1722581-em</i></td>
+      <td><i>08:35:36.73</i></td>
+      <td><i>25:00:15.0</i></td>
+      <td><i>8.37</i></td>
+      <td><i>Interacting</i></td>
+      <td><i>-9.722</i></td>
+      <td><i>1</i></td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>PGC 1818175</td>
+      <td>12:17:08.21</td>
+      <td>27:47:42.9</td>
+      <td>8.4</td>
+      <td>Interacting</td>
+      <td>-11.7</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>UGC 5427</td>
+      <td>10:04:40.95</td>
+      <td>29:21:51.5</td>
+      <td>8.0</td>
+      <td>Isolated</td>
+      <td>-9.68</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>NGC 5486</td>
+      <td>14:07:25.03</td>
+      <td>55:06:10.5</td>
+      <td>9.2</td>
+      <td>Group</td>
+      <td>-8.716</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>dw1408+56</td>
+      <td>14:08:41.0</td>
+      <td>56:55:38</td>
+      <td>7.9</td>
+      <td>Isolated</td>
+      <td>-9.92</td>
+      <td>1</td>
+    </tr>
+    <tr class="row-expandable">
+      <td><b>+</b></td>
+      <td>UGC 4527</td>
+      <td>08:44:23.99</td>
+      <td>76:55:04.6</td>
+      <td>7.6</td>
+      <td>Isolated</td>
+      <td>-10.18</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/javascript" >
+        $(function() {
+	    $("#myTable").tablesorter();
+		});
+</script>
+
+<script>
+/**
+ * Enables expandable/collapsible rows for a table.
+ * @param {string} tableId The ID of the table.
+ */
+function enableExpandableRows(tableId) {
+    const table = document.getElementById(tableId);
+    if (!table) return;
+
+    table.addEventListener('click', function(e) {
+        // Find the closest ancestor 'tr' that is expandable
+        const expandableRow = e.target.closest('tr.row-expandable');
+        if (!expandableRow) return;
+
+        // Find the very next TR element, which is the details row
+        const detailsRow = expandableRow.nextElementSibling;
+        if (detailsRow && detailsRow.classList.contains('row-details')) {
+            expandableRow.classList.toggle('open');
+            detailsRow.classList.toggle('visible');
+        }
+    });
+}
+
+// Initialize the functionality
+enableExpandableRows('myTable');
+
+</script>
+
+</html>
