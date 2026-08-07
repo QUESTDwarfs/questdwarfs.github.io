@@ -33,7 +33,7 @@ window.addEventListener('message', function(e) {
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="530px" width="800pt" onLoad="resize();"></iframe>
+        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="700px" width="800pt" onLoad="resize();"></iframe>
     </div>
 </div>
 
