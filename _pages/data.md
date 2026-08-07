@@ -16,31 +16,6 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 &nbsp;
 
-<script>
-
-window.addEventListener('message', function(e) {
-  var $iframe = jQuery("#myIframe");
-  var eventName = e.data[0];
-  var data = e.data[1];
-  switch(eventName) {
-    case 'setHeight':
-      $iframe.height(data);
-      break;
-  }
-}, false);
-
-</script>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="700px" width="800pt" onLoad="resize();"></iframe>
-    </div>
-</div>
-
-<!-- alternative expandable table; could add sorting too? then expand galaxy info as wanted...: https://www.quackit.com/html/html_editors/scratchpad/?example=/html/templates/tables/expandable_rows_table -->
-
-<!-- &nbsp; -->
-
 Summary tables are available here:
 
 
@@ -48,16 +23,28 @@ Summary tables are available here:
 
 <a href="/assets/catalogs/QUESTgalaxies_v1.csv" download="QUESTgalaxies_v1.csv" class="btn">Download Galaxies CSV</a> <a href="/assets/catalogs/QUESTsightlines_v1.csv" download="QUESTsightlines_v1.csv" class="btn">Download Sightlines CSV</a>
 
+&nbsp;
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="1000px" width="800pt"></iframe>
+    </div>
+</div>
+
+<!-- https://stackoverflow.com/questions/9162933/make-iframe-height-dynamic-based-on-content-inside-jquery-javascript#comment97802113_23020025
+WOULD EVENTUALLY LIKE TO DYNAMICALLY RESIZE IFRAME ABOVE
+good enough hacked together solution for now...   -->
 
 
-{% details **PGC 4143** %}
+
+<!-- {% details **PGC 4143** %}
 Details of PGC 4143
 
 
 [SIMBAD](https://simbad.cds.unistra.fr/simbad/sim-id?Ident=PGC+4143&submit=submit+id){: .btn} [DECaLS](https://www.legacysurvey.org/viewer?ra=17.4223&dec=-2.2664&layer=ls-dr9&zoom=12){: .btn} [MAST](https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html?searchQuery=%7B%22service%22%3A%22CAOMFILTERED%22%2C%22inputText%22%3A%5B%7B%22paramName%22%3A%22intentType%22%2C%22niceName%22%3A%22intentType%22%2C%22values%22%3A%5B%22science%22%5D%2C%22valString%22%3A%22science%22%2C%22isDate%22%3Afalse%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22science%22%7D%2C%7B%22paramName%22%3A%22obs_collection%22%2C%22niceName%22%3A%22obs_collection%22%2C%22values%22%3A%5B%22HST%22%2C%22GALEX%22%2C%22FUSE%22%5D%2C%22valString%22%3A%22HST%2C%20GALEX%2C%20FUSE%22%2C%22isDate%22%3Afalse%2C%22separator%22%3A%22%3B%22%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22HST%2C%20GALEX%2C%20FUSE%22%7D%5D%2C%22position%22%3A%2217.42275%2C%20-2.26647%2C%200.008221%22%2C%22paramsService%22%3A%22Mast.Caom.Filtered.Position%22%2C%22title%22%3A%22MAST%3A%20%20PGC%204143%22%2C%22tooltip%22%3A%22science%3B%20HST%2C%20GALEX%2C%20FUSE%3B%20%20PGC%204143%3B%22%2C%22ra%22%3A17.42275%2C%22dec%22%3A-2.26647%2C%22radius%22%3A%220.008221%22%2C%22columns%22%3A%22*%22%2C%22columnsConfig%22%3A%22Mast.Caom.Cone%22%7D){: .btn} [Download ZIP](https://download-directory.github.io/?url=https://github.com/QUESTDwarfs/galaxy_dataproducts/tree/main/PGC4143){: .btn}
 
 [LBQS 0107-0232 (MAST)](https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html?searchQuery=%7B%22service%22%3A%22CAOMFILTERED%22%2C%22inputText%22%3A%5B%7B%22paramName%22%3A%22intentType%22%2C%22niceName%22%3A%22intentType%22%2C%22values%22%3A%5B%22science%22%5D%2C%22valString%22%3A%22science%22%2C%22isDate%22%3Afalse%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22science%22%7D%2C%7B%22paramName%22%3A%22obs_collection%22%2C%22niceName%22%3A%22obs_collection%22%2C%22values%22%3A%5B%22HST%22%2C%22FUSE%22%5D%2C%22valString%22%3A%22HST%2C%20FUSE%22%2C%22isDate%22%3Afalse%2C%22separator%22%3A%22%3B%22%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22HST%2C%20FUSE%22%7D%2C%7B%22paramName%22%3A%22instrument_name%22%2C%22niceName%22%3A%22instrument_name%22%2C%22values%22%3A%5B%22COS%2FFUV%22%2C%22COS%22%2C%22FUV%22%5D%2C%22valString%22%3A%22COS%2FFUV%2C%20COS%2C%20FUV%22%2C%22isDate%22%3Afalse%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22COS%2FFUV%2C%20COS%2C%20FUV%22%7D%5D%2C%22position%22%3A%2217.56021420795%2C%20-2.28266100849%2C%200.01%22%2C%22paramsService%22%3A%22Mast.Caom.Filtered.Position%22%2C%22title%22%3A%22MAST%3A%20%20LBQS%200107-0232%22%2C%22tooltip%22%3A%22science%3B%20HST%2C%20FUSE%3B%20COS%2FFUV%2C%20COS%2C%20FUV%3B%20%20LBQS%200107-0232%20r%3D0.05d%3B%22%2C%22ra%22%3A17.56021420795%2C%22dec%22%3A-2.28266100849%2C%22radius%22%3A0.01%2C%22columns%22%3A%22*%22%2C%22columnsConfig%22%3A%22Mast.Caom.Cone%22%7D){: .btn} [LBQS 0107-0235 (MAST)](https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html?searchQuery=%7B%22service%22%3A%22CAOMFILTERED%22%2C%22inputText%22%3A%5B%7B%22paramName%22%3A%22intentType%22%2C%22niceName%22%3A%22intentType%22%2C%22values%22%3A%5B%22science%22%5D%2C%22valString%22%3A%22science%22%2C%22isDate%22%3Afalse%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22science%22%7D%2C%7B%22paramName%22%3A%22obs_collection%22%2C%22niceName%22%3A%22obs_collection%22%2C%22values%22%3A%5B%22HST%22%2C%22FUSE%22%5D%2C%22valString%22%3A%22HST%2C%20FUSE%22%2C%22isDate%22%3Afalse%2C%22separator%22%3A%22%3B%22%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22HST%2C%20FUSE%22%7D%2C%7B%22paramName%22%3A%22instrument_name%22%2C%22niceName%22%3A%22instrument_name%22%2C%22values%22%3A%5B%22COS%2FFUV%22%2C%22COS%22%2C%22FUV%22%5D%2C%22valString%22%3A%22COS%2FFUV%2C%20COS%2C%20FUV%22%2C%22isDate%22%3Afalse%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22COS%2FFUV%2C%20COS%2C%20FUV%22%7D%5D%2C%22position%22%3A%2217.55483479803%2C%20-2.33134408754%2C%200.05%22%2C%22paramsService%22%3A%22Mast.Caom.Filtered.Position%22%2C%22title%22%3A%22MAST%3A%20%20LBQS%200107-0235%22%2C%22tooltip%22%3A%22science%3B%20HST%2C%20FUSE%3B%20COS%2FFUV%2C%20COS%2C%20FUV%3B%20%20LBQS%200107-0235%20r%3D0.05d%3B%22%2C%22ra%22%3A17.55483479803%2C%22dec%22%3A-2.33134408754%2C%22radius%22%3A0.05%2C%22columns%22%3A%22*%22%2C%22columnsConfig%22%3A%22Mast.Caom.Cone%22%7D){: .btn} [QSO J0110-0218 (MAST)](https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html?searchQuery=%7B%22service%22%3A%22CAOMFILTERED%22%2C%22inputText%22%3A%5B%7B%22paramName%22%3A%22intentType%22%2C%22niceName%22%3A%22intentType%22%2C%22values%22%3A%5B%22science%22%5D%2C%22valString%22%3A%22science%22%2C%22isDate%22%3Afalse%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22science%22%7D%2C%7B%22paramName%22%3A%22obs_collection%22%2C%22niceName%22%3A%22obs_collection%22%2C%22values%22%3A%5B%22HST%22%2C%22FUSE%22%5D%2C%22valString%22%3A%22HST%2C%20FUSE%22%2C%22isDate%22%3Afalse%2C%22separator%22%3A%22%3B%22%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22HST%2C%20FUSE%22%7D%2C%7B%22paramName%22%3A%22instrument_name%22%2C%22niceName%22%3A%22instrument_name%22%2C%22values%22%3A%5B%22COS%2FFUV%22%2C%22COS%22%2C%22FUV%22%5D%2C%22valString%22%3A%22COS%2FFUV%2C%20COS%2C%20FUV%22%2C%22isDate%22%3Afalse%2C%22facetType%22%3A%22discrete%22%2C%22displayString%22%3A%22COS%2FFUV%2C%20COS%2C%20FUV%22%7D%5D%2C%22position%22%3A%2217.56779129192%2C%20-2.31410072225%2C%200.05%22%2C%22paramsService%22%3A%22Mast.Caom.Filtered.Position%22%2C%22title%22%3A%22MAST%3A%20%20QSO%20J0110-0218%22%2C%22tooltip%22%3A%22science%3B%20HST%2C%20FUSE%3B%20COS%2FFUV%2C%20COS%2C%20FUV%3B%20%20QSO%20J0110-0218%20r%3D0.05d%3B%22%2C%22ra%22%3A17.56779129192%2C%22dec%22%3A-2.31410072225%2C%22radius%22%3A0.05%2C%22columns%22%3A%22*%22%2C%22columnsConfig%22%3A%22Mast.Caom.Cone%22%7D){: .btn}
-{% enddetails %}
+{% enddetails %} -->
 
 
 {% details **UGCA 285** %}
