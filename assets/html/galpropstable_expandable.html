@@ -244,42 +244,7 @@ a.btn {
             <td colspan="7">
                 <div>
 
-                  <table class="minimalist-table">
-                    <tr>
-                      <th>cz (km/s)</th>
-                      <th>D (Mpc)</th> 
-                      <th>log M<sub><span style="font-size:75%">&#9733;</span></sub>/M<sub>&#9737;</sub></th>
-                      <th>log sSFR<sub>H&alpha;</sub>/yr<sup>-1</sup></th>
-                      <th>log sSFR<sub>FUV</sub>/yr<sup>-1</sup></th>
-                      <th>log Z/Z<sub>&#9737;</sub></th>
-                      <th>12+log(O/H)</th>
-                      <th>R<sub>eff</sub> (kpc)</th>
-                    </tr>
-                    <tr>
-                      <td>1770
-                        <math>
-                        <mfrac linethickness="0">
-                          <mrow><mi>+109</mi></mrow>
-                          <mrow><mi>-129</mi></mrow>
-                        </mfrac>
-                      </math>
-                      </td>
-                      <td>22&plusmn;2</td> 
-                      <td>8.9&plusmn;0.2</td>
-                      <td>-10.595&plusmn;0.005</td>
-                      <td>-10.6&plusmn;0.2</td> 
-                      <td>-0.953
-                      <math>
-                        <mfrac linethickness="0">
-                          <mrow><mi>+0.010</mi></mrow>
-                          <mrow><mi>-0.003</mi></mrow>
-                        </mfrac>
-                      </math>
-                      </td> 
-                      <td>8.40&plusmn;0.18</td>
-                      <td>2.7&plusmn;0.3</td>
-                    </tr>
-                  </table>
+                    <iframe src="firstrelease/pgc4143_gal_table.html" frameborder='0' scrolling='no' width="100%"></iframe>
 
                     <br>
                     <br>
@@ -303,72 +268,8 @@ a.btn {
                     <br>
 
 
-                    <table class="minimalist-table">
-                    <tr>
-                      <th>QSO</th>
-                      <th>d<sub>proj</sub> (kpc)</th>
-                      <th>d<sub>proj</sub>/R<sub>vir</sub></th> 
-                      <th>N<sub>H I</sub></th>
-                      <th>N<sub>Si II</sub></th>
-                      <th>N<sub>C II</sub></th>
-                      <th>N<sub>Si III</sub></th>
-                      <th>N<sub>Si IV</sub></th>
-                      <th>N<sub>C IV</sub></th>
-                    </tr>
-                    <tr>
-                      <td>LBQS 0107-0232</td> 
-                      <td>51&plusmn;5</td> 
-                      <td>0.570</td>
-                      <td>...</td>
-                      <td>...</td>
-                      <td>...</td>
-                      <td>...</td>
-                      <td>...</td>
-                      <td>13.42
-                        <math>
-                        <mfrac linethickness="0">
-                          <mrow><mi>+0.07</mi></mrow>
-                          <mrow><mi>-0.08</mi></mrow>
-                        </mfrac>
-                      </math>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>LBQS 0107-0235</td> 
-                      <td>54&plusmn;5</td> 
-                      <td>0.607</td>
-                      <td>14.7&plusmn;0.1</td>
-                      <td>&lt;12.89</td>
-                      <td>13.4&plusmn;0.2</td>
-                      <td>...</td>
-                      <td>12.957
-                        <math>
-                        <mfrac linethickness="0">
-                          <mrow><mi>+0.007</mi></mrow>
-                          <mrow><mi>-0.0075</mi></mrow>
-                        </mfrac>
-                      </math>
-                      </td>
-                      <td>13.3&plusmn;0.1</td>
-                    </tr>
-                    <tr>
-                      <td>QSO J0110-0218</td> 
-                      <td>56&plusmn;5</td> 
-                      <td>0.629</td>
-                      <td>14.21<math>
-                        <mfrac linethickness="0">
-                          <mrow><mi>+0.08</mi></mrow>
-                          <mrow><mi>-0.06</mi></mrow>
-                        </mfrac>
-                      </math></td>
-                      <td>&lt;11.92</td>
-                      <td>&lt;13.05</td>
-                      <td>...</td>
-                      <td>...</td>
-                      <td>&lt;12.875</td>
-                    </tr>
-                  </table>
-
+                  <iframe src="firstrelease/pgc4143_abs_table.html" frameborder='0' scrolling='no' width="100%" height="120%"></iframe>
+                 
                   <br>
                   <br>
                   <br>
@@ -566,13 +467,6 @@ function enableExpandableRows(tableId) {
 // Initialize the functionality
 enableExpandableRows('myTable');
 
-</script>
-
-<script>
-function resize() {
-  var height = document.getElementsByTagName("html")[0].scrollHeight;
-  window.parent.postMessage(["setHeight", height], "*"); 
-}
 </script>
 
 </html>
