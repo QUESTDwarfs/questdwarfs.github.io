@@ -23,6 +23,7 @@ a.btn {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
             text-decoration: none;
+            box-shadow: none;
           }
         }
 
