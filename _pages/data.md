@@ -16,6 +16,8 @@ a.btn {
           padding-bottom: 0.25rem;
           margin-left: 0;
           text-decoration: none;
+          box-shadow: none;
+          text-transform: none;
 
           &:hover {
             color: var(--global-theme-color);
@@ -37,8 +39,6 @@ All code associated with this sample is available on [GitHub](https://github.com
 
 
 Summary tables are available here:
-
-
 <a href="/assets/catalogs/QUESTgalaxies_v1.csv" download="QUESTgalaxies_v1.csv" class="btn">Download Galaxies CSV</a> <a href="/assets/catalogs/QUESTsightlines_v1.csv" download="QUESTsightlines_v1.csv" class="btn">Download Sightlines CSV</a>
 
 &nbsp;
