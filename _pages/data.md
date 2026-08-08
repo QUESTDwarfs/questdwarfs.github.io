@@ -26,8 +26,8 @@ Summary tables are available here:
 &nbsp;
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0" height="100vh">
-        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="100%" width="800pt"></iframe>
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="900pt" width="800pt"></iframe>
     </div>
 </div>
 
