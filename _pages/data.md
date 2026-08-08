@@ -5,6 +5,27 @@ permalink: /
 subtitle: Quasars to Understand Environments around, and STar formation in, Dwarfs
 ---
 
+<!-- remove to use the bootstrap buttons from the theme, but this looks cleaner, I think -->
+<style>
+a.btn {
+          color: var(--global-text-color);
+          border: 1px solid #000000;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          margin-left: 0;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+            text-decoration: none;
+          }
+        }
+
+</style>
+
 The QUEST Dwarfs project extends existing samples of dwarf galaxies for which the CGM and broader physical and chemical characteristics of the galaxy have been probed. This sample encompasses dwarf galaxies over three decades in mass in a variety of environments, enabling exquisitely detailed, holistic study of the baryon cycle in low mass galaxies.
 
 To cite QUEST Dwarfs data and/or results, please refer to our [Publications](https://questdwarfs.github.io/publications).
