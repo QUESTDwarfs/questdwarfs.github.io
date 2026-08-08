@@ -33,7 +33,8 @@ Summary tables are available here:
 
 <!-- https://stackoverflow.com/questions/9162933/make-iframe-height-dynamic-based-on-content-inside-jquery-javascript#comment97802113_23020025
 WOULD EVENTUALLY LIKE TO DYNAMICALLY RESIZE IFRAME ABOVE
-good enough hacked together solution for now...   -->
+good enough hacked together solution for now...   
+in addition to answers listed above: https://github.com/Lemick/open-iframe-resizer-->
 
 
 
