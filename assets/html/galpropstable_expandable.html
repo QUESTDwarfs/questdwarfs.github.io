@@ -1024,4 +1024,22 @@ enableExpandableRows('myTable');
 
 </script>
 
+<script>
+
+this.container = this.frameElement.contentWindow.document.body;
+
+this.watch = () => {
+  cancelAnimationFrame(this.watcher);
+
+  if (this.lastScrollHeight !== container.scrollHeight) {
+    parent.resizeIframeToContentSize(this.frameElement);  
+  }
+  this.lastScrollHeight = container.scrollHeight;
+  this.watcher = requestAnimationFrame(this.watch);
+};
+this.watcher = window.requestAnimationFrame(this.watch);
+
+// parent.resizeIframe(this.frameElement); 
+</script>
+
 </html>
