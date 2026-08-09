@@ -44,11 +44,18 @@ Summary tables are available here:
 
 &nbsp;
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   function resizeIframe(iframe) {
     iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
   }
-</script>  
+</script>   -->
+
+<script type="text/javascript">
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    window.requestAnimationFrame(() => resizeIframe(iframe));
+  }
+</script>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
