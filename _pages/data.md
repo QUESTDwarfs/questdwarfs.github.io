@@ -46,32 +46,14 @@ Summary tables are available here:
 
 
 <!-- The answer for dynamic resizing -- works perfectly for iframe getting larger: https://stackoverflow.com/a/53286303 -->
-<!-- <script type="text/javascript">
-  function resizeIframe(iframe) {
-    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-    window.requestAnimationFrame(() => resizeIframe(iframe));
-  }
-</script> -->
-
 <script type="text/javascript">
   function resizeIframe(iframe) {
     iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-    
-    // on resize
-    iframe.container = iframe.frameElement.contentWindow.document.body;
-
-    iframe.watch = () => {
-        cancelAnimationFrame(iframe.watcher);
-
-        if (iframe.lastScrollHeight !== container.scrollHeight) {
-        parent.resizeIframeToContentSize(iframe.frameElement);  
-        }
-        iframe.lastScrollHeight = container.scrollHeight;
-        iframe.watcher = requestAnimationFrame(iframe.watch);
-    };
-    iframe.watcher = window.requestAnimationFrame(iframe.watch);
+    parent.resizeIframe(this.frameElement); 
+    // window.requestAnimationFrame(() => resizeIframe(iframe));
   }
 </script>
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
