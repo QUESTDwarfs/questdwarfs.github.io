@@ -52,7 +52,7 @@ Summary tables are available here:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no'
+        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' width="100%"
         onload="resizeIframe(this)"></iframe>
     </div>
 </div>
