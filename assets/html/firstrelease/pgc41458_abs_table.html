@@ -1,0 +1,73 @@
+<html>
+
+
+<style>
+.minimalist-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: left;
+    color: #333;
+}
+
+.minimalist-table thead th {
+    padding: 8px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5px;
+    color: #333;
+    /* Stronger bottom border for the header */
+    border-bottom: 2px solid #333; 
+}
+
+.minimalist-table tbody td {
+    padding: 8px;
+    font-size: 0.6rem;
+    /* Subtle bottom border for each row */
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+.minimalist-table .client-column {
+    font-style: italic;
+    color: #666;
+}
+
+</style>
+
+<table class="minimalist-table">
+
+    <thead>
+        <tr>
+            <th scope="col">QSO</th>
+            <th scope="col">d<sub>proj</sub> (kpc)</th>
+            <th scope="col">d<sub>proj</sub>/R<sub>vir</sub></th> 
+            <th scope="col">log N<sub>HI</sub>/cm<sup>-2</sup></th>
+            <th scope="col">log N<sub>SiII</sub>/cm<sup>-2</sup></th>
+            <th scope="col">log N<sub>CII</sub>/cm<sup>-2</sup></th>
+            <th scope="col">log N<sub>SiIII</sub>/cm<sup>-2</sup></th>
+            <th scope="col">log N<sub>SiIV</sub>/cm<sup>-2</sup></th>
+            <th scope="col">log N<sub>CIV</sub>/cm<sup>-2</sup></th>
+        </tr>
+    </thead>
+    <tr>
+        <td>LEDA 169472</td> 
+        <td>13&plusmn;3</td> 
+        <td>0.251</td>
+        <td>13.577
+            <math>
+            <mfrac linethickness="0">
+            <mrow><mi>+0.081</mi></mrow>
+            <mrow><mi>-0.07</mi></mrow>
+        </mfrac>
+        </math>
+        </td>
+        <td>&lt;11.997</td>
+        <td>&lt;12.985</td>
+        <td>&lt;11.903</td>
+        <td>&lt;12.117</td>
+        <td>...</td>
+    </tr>
+    </table>
+
+</html>
