@@ -44,9 +44,16 @@ Summary tables are available here:
 
 &nbsp;
 
+<script type="text/javascript">
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+</script>  
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="800pt" width="800pt"></iframe>
+        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="800pt" width="800pt"
+        onload="resizeIframe(this)"></iframe>
     </div>
 </div>
 
