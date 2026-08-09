@@ -52,10 +52,16 @@ Summary tables are available here:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="800pt" width="800pt"
+        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no'
         onload="resizeIframe(this)"></iframe>
     </div>
 </div>
+
+<!-- <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="800pt" width="800pt"></iframe>
+    </div>
+</div> -->
 
 *Open table in new tab [here](https://questdwarfs.github.io/assets/html/galpropstable_expandable.html).*
 
