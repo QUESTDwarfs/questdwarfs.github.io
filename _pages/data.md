@@ -44,16 +44,32 @@ Summary tables are available here:
 
 &nbsp;
 
+
+<!-- The answer for dynamic resizing -- works perfectly for iframe getting larger: https://stackoverflow.com/a/53286303 -->
 <!-- <script type="text/javascript">
   function resizeIframe(iframe) {
     iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    window.requestAnimationFrame(() => resizeIframe(iframe));
   }
-</script>   -->
+</script> -->
 
 <script type="text/javascript">
   function resizeIframe(iframe) {
     iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-    window.requestAnimationFrame(() => resizeIframe(iframe));
+    
+    // on resize
+    iframe.container = iframe.frameElement.contentWindow.document.body;
+
+    iframe.watch = () => {
+        cancelAnimationFrame(iframe.watcher);
+
+        if (iframe.lastScrollHeight !== container.scrollHeight) {
+        parent.resizeIframeToContentSize(iframe.frameElement);  
+        }
+        iframe.lastScrollHeight = container.scrollHeight;
+        iframe.watcher = requestAnimationFrame(iframe.watch);
+    };
+    iframe.watcher = window.requestAnimationFrame(iframe.watch);
   }
 </script>
 
@@ -64,18 +80,9 @@ Summary tables are available here:
     </div>
 </div>
 
-<!-- <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' height="800pt" width="800pt"></iframe>
-    </div>
-</div> -->
 
 *Open table in new tab [here](https://questdwarfs.github.io/assets/html/galpropstable_expandable.html).*
 
-<!-- https://stackoverflow.com/questions/9162933/make-iframe-height-dynamic-based-on-content-inside-jquery-javascript#comment97802113_23020025
-WOULD EVENTUALLY LIKE TO DYNAMICALLY RESIZE IFRAME ABOVE
-good enough hacked together solution for now...   
-in addition to answers listed above: https://github.com/Lemick/open-iframe-resizer-->
 
 
 
