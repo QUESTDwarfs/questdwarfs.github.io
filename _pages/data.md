@@ -49,8 +49,7 @@ Summary tables are available here:
 <script type="text/javascript">
   function resizeIframe(iframe) {
     iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-    parent.resizeIframe(this.frameElement); 
-    // window.requestAnimationFrame(() => resizeIframe(iframe));
+    window.requestAnimationFrame(() => resizeIframe(iframe));
   }
 </script>
 
