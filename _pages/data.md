@@ -41,11 +41,11 @@ To cite QUEST Dwarfs data and/or results, please refer to our [Publications](htt
 
 
 Summary tables are available here:
-<a href="/assets/catalogs/QUESTgalaxies_v1.csv" download="QUESTgalaxies_v1.csv" class="btn">Download Galaxy CSV</a> <a href="/assets/catalogs/QUESTsightlines_v1.csv" download="QUESTsightlines_v1.csv" class="btn">Download Sightline CSV</a> <a href="/assets/catalogs/QUESTgalaxies_byspectrum_v1.csv" download="QUESTsightlines_v1.csv" class="btn">Download Spectrum CSV</a>
+<a href="/assets/catalogs/QUESTgalaxies_v1.csv" download="QUESTgalaxies_v1.csv" class="btn">Download Galaxy CSV</a> <a href="/assets/catalogs/QUESTsightlines_v1.csv" download="QUESTsightlines_v1.csv" class="btn">Download Sightline CSV</a>
 
 &nbsp;
 
-Explore the data further: <a href="https://questdwarfs.github.io/assets/html/quest_compare_spectra.html" class="btn">Compare Optical Spectra</a> <a href="https://questdwarfs.github.io/assets/html/quest_compare_abs.html" class="btn">Compare FUV Spectra</a>
+Explore the data further: <a href="https://questdwarfs.github.io/assets/html/quest_compare_spectra_full.html" class="btn">Compare Optical Spectra</a> <a href="https://questdwarfs.github.io/assets/html/quest_compare_abs.html" class="btn">Compare FUV Spectra</a>
 
 
 &nbsp;
