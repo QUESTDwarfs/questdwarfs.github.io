@@ -50,55 +50,24 @@ Explore the data further: <a href="https://questdwarfs.github.io/assets/html/que
 &nbsp;
 
 <!-- The answer for dynamic resizing -- works perfectly for iframe getting larger: https://stackoverflow.com/a/53286303 -->
-<!-- <script type="text/javascript">
+<script type="text/javascript">
   function resizeIframe(iframe) {
     iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
     window.requestAnimationFrame(() => resizeIframe(iframe));
   }
-</script> -->
+</script>
 
+<!-- May be the best option if it ends up working for browsers -- https://developer.mozilla.org/en-US/docs/Web/API/Window/requestResize -->
 
+*Open table in new tab [here](https://questdwarfs.github.io/assets/html/galpropstable_expandable.html).*
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' width="800px"
-        onload="resizeIframe(this)" id="expand-table"></iframe>
+        onload="resizeIframe(this)"></iframe>
     </div>
 </div>
 
-<!-- https://scientyficworld.org/how-to-dynamically-set-iframe-height/ -->
-<script>
-  const iframe = document.getElementById('expand-table');
-
-  // Function to update iframe height to content's current height
-  function updateIframeHeight() {
-    if (!iframe) return;
-    const doc = iframe.contentDocument || iframe.contentWindow.document;
-    // Calculate content height (consider both body and HTML for safety)
-    const body = doc.body, html = doc.documentElement;
-    const contentHeight = Math.max(
-      body.scrollHeight, html.scrollHeight, 
-      body.offsetHeight, html.offsetHeight, 
-      body.clientHeight, html.clientHeight
-    );
-    iframe.style.height = contentHeight + 'px';
-  }
-
-  // Run on iframe load
-  iframe.addEventListener('load', () => {
-    updateIframeHeight();  // initial sizing
-
-    // Set up a MutationObserver to watch for changes in the iframe document
-    const targetNode = iframe.contentDocument.body;
-    const config = { attributes: true, childList: true, subtree: true };
-    const observer = new MutationObserver(() => {
-      updateIframeHeight();
-    });
-    observer.observe(targetNode, config);
-  });
-</script>
-
-
-*Open table in new tab [here](https://questdwarfs.github.io/assets/html/galpropstable_expandable.html).*
+<!-- Will just live with the white space at the bottom for now... maybe I'll figure out the on click stuff at some point. -->
 
 
 
