@@ -37,13 +37,12 @@ To cite QUEST Dwarfs data and/or results, please refer to our [Publications](htt
 <!-- All code associated with this sample is available on [GitHub](https://github.com/QUESTDwarfs){:target="_blank"}. -->
 
 
-**QUEST Dwarfs DR1 is coming soon!**
+**Our first release paper is out now on [arXiv](){:target="_blank}!**
 
 
 Summary tables are available here:
 <a href="/assets/catalogs/QUESTgalaxies_v1.csv" download="QUESTgalaxies_v1.csv" class="btn">Download Galaxy CSV</a> <a href="/assets/catalogs/QUESTsightlines_v1.csv" download="QUESTsightlines_v1.csv" class="btn">Download Sightline CSV</a>
 
-&nbsp;
 
 Explore the data further: <a href="https://questdwarfs.github.io/assets/html/quest_compare_spectra_full.html" class="btn">Compare Optical Spectra</a> <a href="https://questdwarfs.github.io/assets/html/quest_compare_abs.html" class="btn">Compare FUV Spectra</a>
 
@@ -51,20 +50,52 @@ Explore the data further: <a href="https://questdwarfs.github.io/assets/html/que
 &nbsp;
 
 <!-- The answer for dynamic resizing -- works perfectly for iframe getting larger: https://stackoverflow.com/a/53286303 -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   function resizeIframe(iframe) {
     iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
     window.requestAnimationFrame(() => resizeIframe(iframe));
   }
-</script>
+</script> -->
 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <iframe src="/assets/html/galpropstable_expandable.html" frameborder='0' scrolling='no' width="800px"
-        onload="resizeIframe(this)"></iframe>
+        onload="resizeIframe(this)" id="expand-table"></iframe>
     </div>
 </div>
+
+<!-- https://scientyficworld.org/how-to-dynamically-set-iframe-height/ -->
+<script>
+  const iframe = document.getElementById('expand-table');
+
+  // Function to update iframe height to content's current height
+  function updateIframeHeight() {
+    if (!iframe) return;
+    const doc = iframe.contentDocument || iframe.contentWindow.document;
+    // Calculate content height (consider both body and HTML for safety)
+    const body = doc.body, html = doc.documentElement;
+    const contentHeight = Math.max(
+      body.scrollHeight, html.scrollHeight, 
+      body.offsetHeight, html.offsetHeight, 
+      body.clientHeight, html.clientHeight
+    );
+    iframe.style.height = contentHeight + 'px';
+  }
+
+  // Run on iframe load
+  iframe.addEventListener('load', () => {
+    updateIframeHeight();  // initial sizing
+
+    // Set up a MutationObserver to watch for changes in the iframe document
+    const targetNode = iframe.contentDocument.body;
+    const config = { attributes: true, childList: true, subtree: true };
+    const observer = new MutationObserver(() => {
+      updateIframeHeight();
+    });
+    observer.observe(targetNode, config);
+  });
+</script>
 
 
 *Open table in new tab [here](https://questdwarfs.github.io/assets/html/galpropstable_expandable.html).*
