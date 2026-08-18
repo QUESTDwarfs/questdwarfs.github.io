@@ -37,7 +37,7 @@ To cite QUEST Dwarfs data and/or results, please refer to our [Publications](htt
 <!-- All code associated with this sample is available on [GitHub](https://github.com/QUESTDwarfs){:target="_blank"}. -->
 
 
-<!-- **Our first release paper is out now on [arXiv](){:target="_blank}!** -->
+**Our first release paper is out now on [arXiv](https://arxiv.org/abs/2608.15782){:target="_blank}!**
 
 
 Summary tables are available here:
