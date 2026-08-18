@@ -1,6 +1,6 @@
 ---
 layout: page
-title: QUEST I&#58; First Release
+title: QUEST Dwarfs I&#58; First Release
 description: 
 img: assets/img/firstrelease_columndensities_mstar_envir.png
 importance: 1
