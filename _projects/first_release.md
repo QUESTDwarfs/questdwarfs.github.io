@@ -17,7 +17,7 @@ category: Circumgalactic Medium
 {: style="font-size: 110%; text-align: center;"}
 
 
-In this first QUEST Dwarfs paper, we analyze just 20% of our full sample using a combination of broadband imaging, optical spectra, and FUV absorption spectra. We find: 
+In this first QUEST Dwarfs paper, we analyze just 20% of our full sample using a combination of broadband imaging, optical spectroscopy, and FUV absorption spectroscopy. We find: 
 
 - CGM constraints from 14 dwarf galaxies via 16 sightlines; 9 sightlines withing 0.3 R<sub>vir</sub> (improvement in number of CGM probes by a ~factor of 3 outside of the Local Group)
 - Chemically enriched gas is concentrated toward galaxies, apparent multiphase gradient with lower ionization chemical species more concentrated and higher ionization species more extended
