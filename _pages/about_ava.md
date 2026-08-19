@@ -1,1 +1,1 @@
-**[Ava Polzin](https://avapolzin.github.io)** recently defended her PhD in Astronomy & Astrophyics at the University of Chicago. In September, she will start as a Dunlap Fellow at the University of Toronto.
+[**Ava Polzin**](https://avapolzin.github.io) recently defended her PhD in Astronomy & Astrophyics at the University of Chicago. In September, she will start as a Dunlap Fellow at the University of Toronto.
