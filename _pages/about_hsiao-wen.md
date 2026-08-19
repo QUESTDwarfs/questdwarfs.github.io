@@ -1,1 +1,1 @@
-**Hsiao-Wen Chen** is a Professor of Astronomy & Astrophysics and a Senior Member of the Kavli Institute for Cosmological Physics at the University of Chicago.
+[**Hsiao-Wen Chen**](https://lambda.uchicago.edu/wordpress/) is a Professor of Astronomy & Astrophysics and a Senior Member of the Kavli Institute for Cosmological Physics at the University of Chicago.
